@@ -31,11 +31,11 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
-    "start": "gatsby serve",
+    // "start": "",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "heroku-postbuild": "gatsby build"
+    // "heroku-postbuild": "gatsby build"
   },
   "repository": {
     "type": "git",
