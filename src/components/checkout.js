@@ -12,14 +12,12 @@ const buttonStyles = {
   borderRadius: "6px",
   letterSpacing: "1.5px",
 }
-const testFunction = () => {
-  console.log(apiKey)
-}
+
 const apiKey = process.env.STRIPE_PUBLISHABLE_KEY
 const stripePromise = loadStripe(apiKey)
+alert(apiKey)
 const redirectToCheckout = async event => {
   
-  testFunction();
   event.preventDefault()
   quantity += parseInt(prompt("QUANTITY"))
   if(quantity > 1000) {
