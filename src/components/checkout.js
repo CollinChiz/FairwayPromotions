@@ -15,6 +15,7 @@ const buttonStyles = {
 const apiKey = process.env.STRIPE_PUBLISHABLE_KEY
 const stripePromise = loadStripe(apiKey)
 const redirectToCheckout = async event => {
+  console.log(apiKey);
   event.preventDefault()
   quantity += parseInt(prompt("QUANTITY"))
   if(quantity > 1000) {
