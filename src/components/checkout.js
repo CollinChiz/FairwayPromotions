@@ -15,7 +15,7 @@ const buttonStyles = {
 
 const apiKey = process.env.STRIPE_PUBLISHABLE_KEY
 const stripePromise = loadStripe(apiKey)
-alert(apiKey)
+return apiKey;
 const redirectToCheckout = async event => {
   
   event.preventDefault()
