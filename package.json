@@ -28,7 +28,8 @@
   ],
   "license": "MIT",
   "scripts": {
-    "heroku-postbuild": "gatsby build"
+    "heroku-postbuild": "gatsby build",
+    "start": "npm start"
   },
   "repository": {
     "type": "git",
