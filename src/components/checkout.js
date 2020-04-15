@@ -28,7 +28,7 @@ const redirectToCheckout = async event => {
   }
   const stripe = await stripePromise
   const { error } = await stripe.redirectToCheckout({
-    items: [{ sku: "sku_H67YFxciWRhswO", quantity: quantity }],
+    items: [{ sku: "sku_H6Hip8Lv8riDd3", quantity: quantity }],
     successUrl: `http://localhost:8000/page-2/`,
     cancelUrl: `http://localhost:8000/`,
     shippingAddressCollection: {
