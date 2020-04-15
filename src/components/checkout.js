@@ -1,5 +1,6 @@
 import React from "react"
 import { loadStripe } from "@stripe/stripe-js"
+import "../../gatsby-node"
 var quantity = 0;
 const buttonStyles = {
   fontSize: "13px",
