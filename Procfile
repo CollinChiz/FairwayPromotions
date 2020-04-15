@@ -1,1 +1,1 @@
-web: gatsby serve -p $PORT -H 0.0.0.0
+web: gatsby build -p $PORT -H 0.0.0.0
