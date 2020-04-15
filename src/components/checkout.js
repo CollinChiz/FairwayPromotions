@@ -1,6 +1,5 @@
 import React from "react"
 import { loadStripe } from "@stripe/stripe-js"
-import { number } from "prop-types"
 var quantity = 0;
 const buttonStyles = {
   fontSize: "13px",
