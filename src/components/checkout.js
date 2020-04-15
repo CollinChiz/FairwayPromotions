@@ -12,7 +12,6 @@ const buttonStyles = {
   borderRadius: "6px",
   letterSpacing: "1.5px",
 }
-require("dotenv");
 const stripePromise = loadStripe(process.env.STRIPE_PUBLISHABLE_KEY)
 const redirectToCheckout = async event => {
   event.preventDefault()
