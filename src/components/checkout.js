@@ -29,8 +29,8 @@ const redirectToCheckout = async event => {
   const stripe = await stripePromise
   const { error } = await stripe.redirectToCheckout({
     items: [{ sku: "sku_H6Hip8Lv8riDd3", quantity: quantity }],
-    successUrl: `fairwaypromotionsinc.com`,
-    cancelUrl: `fairwaypromotionsinc.com`,
+    successUrl: `https://fairwaypromotionsinc.com`,
+    cancelUrl: `https://fairwaypromotionsinc.com`,
     shippingAddressCollection: {
         allowedCountries: ['US'],
     }
