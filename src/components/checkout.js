@@ -1,4 +1,3 @@
-const apiKey = process.env.STRIPE_PUBLISHABLE_KEY
 import React from "react"
 import { loadStripe } from "@stripe/stripe-js"
 var quantity = 0;
@@ -14,7 +13,7 @@ const buttonStyles = {
   letterSpacing: "1.5px",
 }
 
-const stripePromise = loadStripe(apiKey)
+const stripePromise = loadStripe(process.env.STRIPE_PUBLISHABLE_KEY)
 console.log(apiKey);
 const redirectToCheckout = async event => {
   
