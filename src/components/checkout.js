@@ -29,8 +29,8 @@ const redirectToCheckout = async event => {
   const stripe = await stripePromise
   const { error } = await stripe.redirectToCheckout({
     items: [{ sku: "sku_H6Hip8Lv8riDd3", quantity: quantity }],
-    successUrl: `https://5eb087c013d750300dc57b90--elegant-nightingale-b04ae2.netlify.app/`,
-    cancelUrl: `https://5eb087c013d750300dc57b90--elegant-nightingale-b04ae2.netlify.app/`,
+    successUrl: `fairwaypromotionsinc.com`,
+    cancelUrl: `fairwaypromotionsinc.com`,
     shippingAddressCollection: {
         allowedCountries: ['US'],
     }
