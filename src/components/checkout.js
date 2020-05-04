@@ -13,7 +13,7 @@ const buttonStyles = {
   letterSpacing: "1.5px",
 }
 
-const stripePromise = loadStripe(process.env.STRIPE_PUBLISHABLE_KEY)
+const stripePromise = loadStripe(process.env.GATSBY_STRIPE_PUBLISHABLE_KEY)
 const redirectToCheckout = async event => {
   
   event.preventDefault()
