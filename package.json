@@ -29,7 +29,7 @@
   ],
   "license": "MIT",
   "scripts": {
-    "start": "gatsby build"
+    "start": "node ./scripts/create-env.js && gatsby build"
   },
   "repository": {
     "type": "git",
