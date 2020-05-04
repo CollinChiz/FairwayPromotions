@@ -39,6 +39,7 @@ const redirectToCheckout = async event => {
 
   if (error) {
     console.warn("Error:", error)
+    console.log(apiKey);
   }
 }
 const Checkout = () => {
