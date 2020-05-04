@@ -1,4 +1,4 @@
-const apiKey = process.env.STRIPE_PUBLISHABLE_KEY
+const apiKey = process.env.GATSBY_STRIPE_PUBLISHABLE_KEY
 import React from "react"
 import { loadStripe } from "@stripe/stripe-js"
 var quantity = 0;
@@ -15,7 +15,7 @@ const buttonStyles = {
 }
 
 const stripePromise = loadStripe(apiKey)
-console.log(process.env);
+console.log(apiKey);
 const redirectToCheckout = async event => {
   
   event.preventDefault()
