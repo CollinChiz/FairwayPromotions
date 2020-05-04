@@ -15,6 +15,7 @@ const buttonStyles = {
 }
 
 const stripePromise = loadStripe(apiKey)
+console.log(apiKey);
 const redirectToCheckout = async event => {
   
   event.preventDefault()
@@ -39,7 +40,6 @@ const redirectToCheckout = async event => {
 
   if (error) {
     console.warn("Error:", error)
-    console.log(apiKey);
   }
 }
 const Checkout = () => {
