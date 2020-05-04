@@ -1,4 +1,4 @@
-import apiKey from "../../gatsby-config"
+const apiKey = process.env.STRIPE_PUBLISHABLE_KEY
 import React from "react"
 import { loadStripe } from "@stripe/stripe-js"
 var quantity = 0;
