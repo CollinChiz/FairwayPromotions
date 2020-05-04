@@ -2,7 +2,9 @@ require("dotenv").config({
   path: `.env.${process.env.NODE_ENV}`,
 })
 
+
 module.exports = {
+  apiKey: process.env.STRIPE_PUBLISHABLE_KEY,
   
   siteMetadata: {
     title: `Fairway Promotions`,
