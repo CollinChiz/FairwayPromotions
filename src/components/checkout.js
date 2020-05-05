@@ -13,8 +13,9 @@ const buttonStyles = {
   letterSpacing: "1.5px",
 }
 
-const stripePromise = loadStripe(process.env.STRIPE_PUBLISHABLE_KEY)
+const stripePromise = loadStripe(process.env.GATSBY_STRIPE_PUBLISHABLE_KEY)
 const redirectToCheckout = async event => {
+  
   event.preventDefault()
   quantity += parseInt(prompt("QUANTITY"))
   if(quantity > 1000) {
@@ -27,9 +28,12 @@ const redirectToCheckout = async event => {
   }
   const stripe = await stripePromise
   const { error } = await stripe.redirectToCheckout({
-    items: [{ sku: "sku_H67YFxciWRhswO", quantity: quantity }],
-    successUrl: `http://localhost:8000/page-2/`,
-    cancelUrl: `http://localhost:8000/`,
+    items: [{ sku: "sku_H6Hip8Lv8riDd3", quantity: quantity }],
+    successUrl: `https://fairwaypromotionsinc.com`,
+    cancelUrl: `https://fairwaypromotionsinc.com`,
+    shippingAddressCollection: {
+        allowedCountries: ['US'],
+    }
   })
 
   if (error) {
