@@ -14,7 +14,7 @@ const IndexPage = props => (
       <div class="row">
         <div class="col-md-6">
           <div style={{ marginRight: "20px" }}>
-            <Carousel>
+            <Carousel class="carousel">
               <Carousel.Item>
                 <Img
                   fluid={props.data.Guppie1ql.childImageSharp.fluid}
@@ -37,27 +37,27 @@ const IndexPage = props => (
           </div>
         </div>
         <div class="col-md-6">
-          <div>
-            <div class="row" style={{ border: "1px solid black" }}>
-              <div class="col-md-6">Quantity:</div>
-              <div class="col-md-6" style={{ borderLeft: "1px solid black" }}>
-                0 - 1000
-              </div>
-            </div>
-            <div
-              class="row"
-              style={{ border: "1px solid black", borderTop: "none" }}
-            >
-              <div class="col-md-6">Price:</div>
-              <div class="col-md-6" style={{ borderLeft: "1px solid black" }}>
-                $8.60
-              </div>
-            </div>
-            <div style={{ position: "absolute", bottom: "0", left: "25%" }}>
-              <div id="card-element">
-                <Checkout />
-              </div>
-            </div>
+          <table style={{ color: "white", backgroundColor: "rebeccapurple", border: "1px solid black"}}>
+            <tr>
+              <th style={{borderBottom: "1px solid black"}}>
+                Quantity:
+              </th>
+              <td style={{borderBottom: "1px solid black"}}>0 - 1000</td>
+            </tr> 
+            <tr>
+              <th style={{borderBottom: "1px solid black"}}>
+                Price:
+              </th>
+              <td style={{borderBottom: "1px solid black"}}>$8.60</td>
+            </tr>
+            
+          </table>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="checkout" id="card-element" style={{ float: "right" }}>
+            <Checkout />
           </div>
         </div>
       </div>
@@ -69,9 +69,8 @@ const IndexPage = props => (
         </div>
       </div>
       <br></br>
+      <br></br>
     </div>
-
-    <Link to="//">Go to page 2</Link>
   </Layout>
 )
 
