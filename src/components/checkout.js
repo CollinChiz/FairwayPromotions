@@ -39,7 +39,7 @@ const redirectToCheckout = async event => {
 const Checkout = () => {
         return (
           <button style={buttonStyles} onClick={redirectToCheckout}>
-              BUY THE GUPPIE CHORD
+              BUY THE GUPPIE CHARGER
           </button>
         )
     }
