@@ -6,9 +6,10 @@ require("dotenv").config({
 module.exports = {
   
   siteMetadata: {
-    title: `Fairway Promotions`,
+    title: `Fairway Promotions Inc.`,
     description: ``,
-    author: ``,
+    author: `Collin Chisholm
+    cwchiz16@gmail.com`,
     
   },
   plugins: [
@@ -25,7 +26,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Fairway Promotions`,
+        name: `Fairway Promotions Inc.`,
         short_name: `Promotions`,
         start_url: `/`,
         background_color: `#663399`,
