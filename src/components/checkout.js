@@ -1,5 +1,6 @@
 import React from "react"
 import { loadStripe } from "@stripe/stripe-js"
+
 var quantity = 0;
 const buttonStyles = {
   fontSize: "13px",
@@ -17,14 +18,12 @@ const stripePromise = loadStripe(process.env.GATSBY_STRIPE_PUBLISHABLE_KEY)
 const redirectToCheckout = async event => {
   
   event.preventDefault()
-  quantity += parseInt(prompt("QUANTITY"))
-  if(quantity > 1000) {
-      alert("Please contact us at the email address listed for orders over 1000 units.")
-      return
-  } 
-  if(quantity <= 0){
-      alert("Quantity must be at least 1 unit")
-      return
+  quantity = parseInt(prompt("QUANTITY"))
+
+  if(quantity > 1000){
+    alert("For orders over 1000 units please contact orders@fairwaypromotionsinc.com")
+  } else if(quantity <= 0) {
+    alert("Quantity must be at least 1 unit")
   }
   const stripe = await stripePromise
   const { error } = await stripe.redirectToCheckout({
@@ -39,7 +38,8 @@ const redirectToCheckout = async event => {
   if (error) {
     console.warn("Error:", error)
   }
-}
+    
+  }
 const Checkout = () => {
         return (
           <button style={buttonStyles} onClick={redirectToCheckout}>
