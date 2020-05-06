@@ -22,8 +22,10 @@ const redirectToCheckout = async event => {
 
   if(quantity > 1000){
     alert("For orders over 1000 units please contact orders@fairwaypromotionsinc.com")
+    return
   } else if(quantity <= 0) {
     alert("Quantity must be at least 1 unit")
+    return
   }
   const stripe = await stripePromise
   const { error } = await stripe.redirectToCheckout({
