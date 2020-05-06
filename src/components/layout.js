@@ -35,9 +35,13 @@ const Layout = ({ children }) => {
         }}
       >
         <main>{children}</main>
+        <br></br>
+        <br></br>
         <footer>
           © {new Date().getFullYear()}, Built with
           {` Gatsby.js `}
+          <address>Contact: <a href="mailto:orders@fairwaypromotionsinc.com">orders@fairwaypromotionsinc.com</a> for orders over 1000 units</address>
+          <address>For support: <a href="mailto:support@fairwaypromotionsinc.com">support@fairwaypromotionsinc.com</a></address>
         </footer>
       </div>
     </>
