@@ -631,6 +631,9 @@ pre tt:after {
     text-align: center;
   }
 }
+table {
+  border-radius: 5px;
+}
   
 .carousel {
   border: 2px solid black;
