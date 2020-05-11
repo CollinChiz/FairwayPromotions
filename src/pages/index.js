@@ -37,7 +37,7 @@ const IndexPage = props => (
           </div>
         </div>
         <div class="col-md-6">
-          <table style={{ color: "white", backgroundColor: "rebeccapurple", border: "1px solid black"}}>
+          <table style={{ color: "white", backgroundColor: "rebeccapurple"}}>
             <tr>
               <th style={{borderBottom: "1px solid black"}}>
                 Quantity:
@@ -45,10 +45,10 @@ const IndexPage = props => (
               <td style={{borderBottom: "1px solid black"}}>0 - 1000</td>
             </tr> 
             <tr>
-              <th style={{borderBottom: "1px solid black"}}>
+              <th>
                 Price:
               </th>
-              <td style={{borderBottom: "1px solid black"}}>$8.60</td>
+              <td>$8.60</td>
             </tr>
             
           </table>
