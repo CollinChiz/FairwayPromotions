@@ -1,5 +1,5 @@
 import React from "react"
-import { Link, graphql } from "gatsby"
+import { graphql } from "gatsby"
 import Checkout from "../components/checkout"
 import Layout from "../components/layout"
 import { Carousel } from "react-bootstrap"
@@ -37,7 +37,7 @@ const IndexPage = props => (
           </div>
         </div>
         <div class="col-md-6">
-          <table style={{ color: "white", backgroundColor: "rebeccapurple"}}>
+          <table style={{ color: "white", backgroundColor: "darkBlue"}}>
             <tr>
               <th style={{borderBottom: "1px solid black"}}>
                 Quantity:
@@ -61,7 +61,7 @@ const IndexPage = props => (
           </div>
         </div>
       </div>
-      <div class="row" style={{ marginTop: "40px" }}>
+      <div class="row" style={{ marginTop: "40px", backgroundColor: "lightGrey", padding: "25px", borderRadius: "5px", fontSize: "22px"}}>
         <div class="col-md-12">
           The Guppie Charger is a retractable USB cable that charges 95% of
           cellphones today. It contains micro-USB, lighting, USB-C and spans the
@@ -78,21 +78,21 @@ export default IndexPage
 
 export const query = graphql`
   query {
-    Guppie1ql: file(relativePath: { eq: "Guppie1.jpg" }) {
+    Guppie1ql: file(relativePath: { eq: "pic1_purple.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    Guppie2ql: file(relativePath: { eq: "Guppie2.jpg" }) {
+    Guppie2ql: file(relativePath: { eq: "pic2_purple.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid
         }
       }
     }
-    Guppie3ql: file(relativePath: { eq: "Guppie3.jpg" }) {
+    Guppie3ql: file(relativePath: { eq: "pic3_purple.jpg" }) {
       childImageSharp {
         fluid(maxWidth: 600) {
           ...GatsbyImageSharpFluid

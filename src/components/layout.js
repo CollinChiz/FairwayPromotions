@@ -30,18 +30,18 @@ const Layout = ({ children }) => {
       <div
         style={{
           margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
+          // maxWidth: 960,
+          // padding: `0 1.0875rem 1.45rem`,
         }}
       >
         <main>{children}</main>
         <br></br>
         <br></br>
-        <footer>
+        <footer style={{backgroundColor: "darkBlue", color: "white"}}>
           © {new Date().getFullYear()}, Built with
           {` Gatsby.js `}
-          <address>Contact: <a href="mailto:orders@fairwaypromotionsinc.com">orders@fairwaypromotionsinc.com</a> for orders over 1000 units</address>
-          <address>For support: <a href="mailto:support@fairwaypromotionsinc.com">support@fairwaypromotionsinc.com</a></address>
+          <address>Contact: <a style={{color: "blueViolet"}} href="mailto:orders@fairwaypromotionsinc.com">orders@fairwaypromotionsinc.com</a> for orders over 1000 units</address>
+          <address>For support: <a style={{color: "blueViolet"}} href="mailto:support@fairwaypromotionsinc.com">support@fairwaypromotionsinc.com</a></address>
         </footer>
       </div>
     </>
