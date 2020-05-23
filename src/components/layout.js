@@ -37,11 +37,11 @@ const Layout = ({ children }) => {
         <main>{children}</main>
         <br></br>
         <br></br>
-        <footer style={{backgroundColor: "darkBlue", color: "white"}}>
+        <footer style={{backgroundColor: "navy", color: "white"}}>
           © {new Date().getFullYear()}, Built with
           {` Gatsby.js `}
-          <address>Contact: <a style={{color: "blueViolet"}} href="mailto:orders@fairwaypromotionsinc.com">orders@fairwaypromotionsinc.com</a> for orders over 1000 units</address>
-          <address>For support: <a style={{color: "blueViolet"}} href="mailto:support@fairwaypromotionsinc.com">support@fairwaypromotionsinc.com</a></address>
+          <address>Contact: <a style={{color: "white", textDecoration: "underline"}} href="mailto:orders@fairwaypromotionsinc.com">orders@fairwaypromotionsinc.com</a> for orders over 1000 units</address>
+          <address>For support: <a style={{color: "white", textDecoration: "underline"}} href="mailto:support@fairwaypromotionsinc.com">support@fairwaypromotionsinc.com</a></address>
         </footer>
       </div>
     </>
