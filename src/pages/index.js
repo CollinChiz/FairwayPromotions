@@ -37,7 +37,7 @@ const IndexPage = props => (
           </div>
         </div>
         <div class="col-md-6">
-          <table style={{ color: "white", backgroundColor: "darkBlue"}}>
+          <table style={{ color: "white", backgroundColor: "navy"}}>
             <tr>
               <th style={{borderBottom: "1px solid black"}}>
                 Quantity:
@@ -50,8 +50,20 @@ const IndexPage = props => (
               </th>
               <td>$8.60</td>
             </tr>
-            
           </table>
+          <div class="row">
+          <div class="col-md-2">
+
+          </div>
+          <div class="col-md-8" style={{backgroundColor: "lightGrey", borderBottomLeftRadius: "5px",borderBottomRightRadius: "5px", fontSize: "17px"}}>
+          For orders over 1000 units, please contact us at <a style={{textDecoration: "underline", color: "navy"}} href="mailto:orders@fairwaypromotionsinc.com">orders@fairwaypromotionsinc.com</a>
+          </div>
+          <div class="col-md-2">
+
+          </div>
+
+          </div>
+
         </div>
       </div>
       <div class="row">
